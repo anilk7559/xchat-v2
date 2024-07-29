@@ -104,7 +104,7 @@ function CustomSunEditor({ onChange, content, autoFocus = true }: ISunEditorProp
           'Trebuchet MS'
         ]
       }}
-      onImageUploadBefore={uploadPhoto}
+      // onImageUploadBefore={uploadPhoto}
     />
   );
 }
