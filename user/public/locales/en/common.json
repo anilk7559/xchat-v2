@@ -1,0 +1,107 @@
+{
+    "title": "Get intimate. No strings attached!",
+    "header": {
+      "chat": "Chat Room",
+      "models": "All Models",
+      "favorites": "My Favorites",
+      "invite": "Invite User",
+      "option": {
+        "all": "All",
+        "male": "Male",
+        "female": "Female",
+        "transgender": "Transgender"
+      },
+      "postcode": "Postcode",
+      "location": "Location",
+      "all": "All Country"
+    },
+    "modelLists": {
+      "profile": "Check Profile",
+      "chat": "Chat"
+    },
+    "conversation": "Conversations",
+    "welcome": "Welcome",
+    "search": "Search your chat partner",
+    "conversationMsg": " Please select a chat to start messaging, or find more models you like from",
+    "messagePlaceHolder": "Please enter your message here...",
+    "sendTip": "Share a Tip",
+    "tokenMsg": "Buy More Tokens",
+    "tokenInfo": "[Tokens can be used for purchasing model content [videos, gallery, products] and tipping models on this platform.]",
+    "tokenAlert": "No token package available.",
+    "inviteUser": "Invite User",
+    "inviteEmail": "Email Address",
+    "invitePlaceholder": "Please enter your email address here",
+    "closeInvite": "Close",
+    "sendInvite": "Send Invitation",
+    "dropdown": {
+      "profile": "My Profile",
+      "blogs": "My Blogs",
+      "payout": "Payout Request",
+      "earnings": "Earnings",
+      "media": "Media Content",
+      "bookmarkMsg": "Bookmark Messages",
+      "token": "Token History",
+      "payment": "Payment Behavior",
+      "contact": "Contact Management",
+      "logout": "Logout"
+    },
+    "profilePage": {
+      "title": "My Profile",
+      "account": "Account",
+      "update": "Update Personal Contact Information",
+      "name": "Username",
+      "email": "Email Address",
+      "age": "Age",
+      "phone": "Phone Number",
+      "dob": "Date of Birth",
+      "gender": "Gender",
+      "option": {
+        "male": "Male",
+        "female": "Female",
+        "transgender": "Transgender"
+      },
+      "country": "Country",
+      "province": "State",
+      "city": "City",
+      "bio": "Biography",
+      "save": "Save Changes"
+    },
+    "passwordPage": {
+      "title": "Password",
+      "update": "Update Account Password",
+      "old": "Current Password",
+      "new": "New Password",
+      "confirm": "Repeat Password",
+      "save": "Save Changes"
+    },
+    "accountdeactivation": {
+      "title": "Deactivate Account",
+      "description": "OTP will be sent to your email. Please enter it below",
+      "submit": "Deactivate Account"
+    },
+    "mediaPage": {
+      "title": "Purchased Media",
+      "videos": "Videos",
+      "gallery": "Gallery",
+      "products": "Products"
+    },
+    "bookmarkPage": {
+      "title": "Bookmarked Messages"
+    },
+    "tokenPage": {
+      "title": "Token History",
+      "buy": "Buy Tokens"
+    },
+    "paymentPage": {
+      "title": "Payment History"
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Please fill out all the information, and we will get back to you within 48 hours",
+      "name": "Name",
+      "email": "Email Address",
+      "message": "Description",
+      "submit": "Submit"
+    }
+  }
+  

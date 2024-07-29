@@ -1,0 +1,106 @@
+{
+        "title": "Werden Sie intim. Keine Bedingungen gestellt!",
+        "header": {
+            "chat": "Chatten Zimmer",
+            "models": "Alle Modelle",
+            "favorites": "Meine Favoriten",
+            "invite": "Nutzer einladen",
+            "option": {
+                "all": "Alle",
+                "male": "Männlich",
+                "female": "Weiblich",
+                "transgender": "Transsexuelle"
+            },
+            "postcode": "Postleitzahl",
+            "location": "Standort",
+            "all": "Alle Land"
+        },
+        "modelLists": {
+            "profile": "Profil prüfen",
+            "chat": "Chatten"
+        },
+        "conversation": "Plaudereien",
+        "welcome": "Willkommen",
+        "search": "Suche deinen Chat-Partner",
+        "conversationMsg": " Bitte wähle einen Chat aus, um mit der Nachrichtenübermittlung zu beginnen, oder finde weitere Modelle, die dir gefallen, von",
+        "messagePlaceHolder": "Bitte geben Sie Ihre Nachricht hier ein...",
+        "sendTip":"Teilen Sie einen Tipp",
+        "tokenMsg": "Mehr Token kaufen",
+        "tokenInfo": "[Token können verwendet werden für  Einkauf Modell Inhalt[Videos, Galerie, Produkte] und Trinkgeld Modelle auf dieser Plattform.]",
+        "tokenAlert": "Es ist kein Token-Paket erhältlich.",
+        "inviteUser": "Benutzer einladen",
+        "inviteEmail": "E-Mail Adresse",
+        "invitePlaceholder":"Bitte geben Sie hier Ihre E-Mail-Adresse ein",
+        "closeInvite": "Schließen Sie",
+        "sendInvite": "Einladung versenden",
+        "dropdown": {
+            "profile": "Mein Profil",
+            "blogs": "Meine Blogs",
+            "payout": "Auszahlungsantrag",
+            "earnings": "Verdienen",
+            "media": "Medieninhalt",
+            "bookmarkMsg": " Lesezeichen Nachrichten",
+            "token": "Token Geschichte",
+            "payment": "Zahlungsverhalten",
+            "contact": "Kontakt Verwaltung",
+            "logout":"Abmeldung"
+        },
+        "profilePage": {
+            "title": "Mein Profil",
+            "account": "Konto",
+            "update": "Aktualisierung der persönlichen Kontaktdaten",
+            "name": "Benutzername",
+            "email": "E-Mail Adresse",
+            "age": "Alter",
+            "phone": "Telefonnummer",
+            "dob": "Geburtsdatum",
+            "gender": "Geschlecht",
+            "option": {
+                "male": "Männlich",
+                "female": "Weiblich",
+                "transgender": "Transsexuelle"
+            },
+            "country": "Land",
+            "province": "Staat",
+            "city": "Stadt",
+            "bio": "Biografie",
+            "save": "Änderungen speichern"
+        },
+        "passwordPage": {
+            "title": "Passwort",
+            "update": "Kontopasswort aktualisieren",
+            "old": "Aktuelles Passwort",
+            "new": "Neues Passwort",
+            "confirm": "Passwort wiederholen",
+            "save": "Änderungen speichern"
+        },
+        "accountdeactivation": {
+            "title": "Konto deaktivieren",
+            "description": "OTP wird an Ihre E-Mail gesendet. Bitte geben Sie es unten ein",
+            "submit": "Konto Deaktivieren"
+        },
+        "mediaPage":{
+            "title": "Gekaufte Medien",
+            "videos": "Videos",
+            "gallery": "Galerie",
+            "products": "Produkte"
+        },
+        "bookmarkPage": {
+            "title": "Markierte Nachrichten"
+        },
+        "tokenPage": {
+            "title": "Tokenverlauf",
+            "buy": "Token kaufen"
+        },
+        "paymentPage": {
+            "title": "Zahlungsverlauf"
+        },
+        "contact": {
+            "title": "Kontakt",
+            "description": "Bitte füllen Sie alle Informationen aus, und wir werden uns innerhalb von 48 Stunden bei Ihnen melden",
+            "name": "Name",
+            "email": "E-Mail Adresse",
+            "message": "Beschreibung",
+            "submit": "Absenden"
+        }
+}

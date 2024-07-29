@@ -1,0 +1,101 @@
+// ----------------- Site Color ---------------------
+$primary-color: #ff337c;
+$primary-hover-color: #c5064b;
+$primary-focus-color: rgba(125, 117, 254, 0.5);
+$primary-active-color: #362afe;
+$primary-active-border: #2a1efe;
+
+$secondary-color: #8497b0;
+$secondary-hover-color: #5a6268;
+$secondary-focus-color: rgba(130, 138, 145, 0.5);
+$secondary-active-color: #545b62;
+$secondary-active-border: #4e555b;
+
+$light-color: #f8f9fa;
+$light-hover-color: #e2e6ea;
+$light-focus-color: rgba(216, 217, 219, 0.5);
+$light-active-color: #dae0e5;
+$light-active-border: #d3d9df;
+
+$dark-color: #343a40;
+$dark-hover-color: #23272b;
+$dark-focus-color: rgba(82, 88, 93, 0.5);
+$dark-active-color: #1d2124;
+$dark-active-border: #171a1d;
+
+$info-color: #3c91ec;
+$info-hover-color: #197de9;
+$info-focus-color: rgba(89, 162, 239, 0.5);
+$info-active-color: #1677df;
+$info-active-border: #1571d4;
+
+$success-color: #44a675;
+$success-hover-color: #398b62;
+$success-focus-color: rgba(96, 179, 138, 0.5);
+$success-active-color: #35825c;
+$success-active-border: #317955;
+
+$warning-color: #ffb74d;
+$warning-hover-color: #ffa827;
+$warning-focus-color: rgba(222, 161, 72, 0.5);
+$warning-active-color: #ffa21a;
+$warning-active-border: #ff9d0d;
+
+$danger-color: #ff337c;
+$danger-hover-color: #ff0d63;
+$danger-focus-color: rgba(255, 82, 144, 0.5);
+$danger-active-color: #ff005b;
+$danger-active-border: #f20057;
+$danger-active-color-2: rgba(255, 82, 144, 0.5);
+
+$table-color: #d4d2ff;
+$table-hover: #bcb9ff;
+$table-secondary: #d6d8db;
+$table-secondary-hover: #c8cbcf;
+$table-success: #cbe6d8;
+$table-success-hover: #badecb;
+$table-info: #c8e0fa;
+$table-info-hover: #b1d3f8;
+$table-warning: #ffebcd;
+$table-warning-hover: #ffebcd;
+$table-danger: #ffc6da;
+$table-danger-hover: #ffadc9;
+$table-light: #fdfdfe;
+$table-light-hover: #ececf6;
+$table-dark: #c6c8ca;
+$table-dark-hover: #b9bbbe;
+$table-active: rgba(0, 0, 0, 0.075);
+
+$white: #fff;
+$white-2: #e9ecef;
+$white-3: #fafbfd;
+$black: #000;
+$black-2: #1b1e21;
+$midnight-blue: #212529;
+$grey-color: #8497b0;
+$great-gray: #383d41;
+$gray: #495057;
+$light-grey: #adb5bd;
+$light-grey-2: #818182;
+$light-grey-3: #cbd1d2;
+$alice-blue: #dee2e6;
+$light-form: #ced4da;
+$great-green: #23563d;
+$green: rgba(68, 166, 117, 0.25);
+$light-navy: #1f4b7b;
+$purpose: #353084;
+$sand-color: #855f28;
+$great-pink: rgba(255, 51, 124, 0.25);
+$dark-pink: #851b40;
+$light-pink: #ffc6db;
+$hover-color: #1e11fe;
+$normal-color: #e5e9f2;
+// ----------------- Site Color ---------------------
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+)

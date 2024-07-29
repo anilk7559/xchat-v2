@@ -1,0 +1,168 @@
+/**************************************
+Template Name: XChat | Login and Register Form Responsive
+**************************************/
+
+@media only screen and (max-width: 1199px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .xchat-template-layout4 {
+    .xchat-content {
+      padding: 0;
+    }
+
+    .xchat-bg-wrap {
+      padding: 8vh 0 8vh 10vw;
+    }
+
+    .xchat-header {
+      .xchat-logo {
+        max-width: 327px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .xchat-none-991 {
+    display: none !important;
+  }
+
+  .xchat-template-layout4 {
+    .xchat-bg-wrap {
+      padding: 6vh 0 6vh 6vw;
+    }
+
+    .xchat-bg-color {
+      padding: 15px;
+    }
+
+    .xchat-bg-img {
+      padding: 30px;
+      height: 600px;
+    }
+
+    .xchat-header h1 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .xchat-none-767 {
+    display: none !important;
+  }
+
+  .xchat-template-layout4 {
+    .xchat-bg-wrap {
+      padding: 5vh 4vw;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .xchat-bg-color {
+      padding: 20px 30px;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .xchat-header h1 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .xchat-template-layout4 ul.xchat-socials li {
+    margin-right: 2px;
+  }
+
+  .xchat-template-layout4 {
+    .xchat-bg-wrap {
+      display: none;
+    }
+
+    .xchat-bg-color {
+      padding: 20px 30px;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .xchat-header h1 {
+      font-size: 28px;
+    }
+  }
+
+}
+.xchat-btn-fill {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: 0;
+  color: #ff337c;
+  border-radius: 3px;
+  border: 1px solid #ff337c;
+  padding: 10px 36px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #ff337c;
+    border-color: #ff337c;
+    color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,73 @@
+.three-lines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  line-height: 20px;
+  height: 60px;
+}
+
+.pagin {
+  justify-content: space-between;
+  div {
+    width: 100%;
+  }
+  span {
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+  .pagin-box {
+    div {
+      text-align: unset;
+    }
+    text-align: right;
+    .pagination {
+      margin: 0;
+      text-align: right;
+    }
+  }
+}
+
+.select-pageSize {
+  width: 60px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 32px;
+  color: #495057;
+  vertical-align: middle;
+  padding: 4px 8px;
+  border: 0.5px solid #495057;
+  border-radius: 4px;
+}
+.search-box {
+  text-align: right;
+  input {
+    height: 32px;
+    line-height: 32px;
+    padding: 4px 8px;
+    border: 0.5px solid #495057;
+    border-radius: 4px;
+  }
+}
+.mgB20 {
+  margin-bottom: 20px;
+}
+.flex {
+  display: flex;
+}
+.no-padL {
+  padding-left: 0;
+}
+.no-padR {
+  padding-right: 0;
+}
+.otp-container-custom {
+  .otp-mini-custom {
+    width: 1.7rem !important;
+    border: 2px solid #ec1260;
+    border-radius: 0.2rem;
+    margin: 0 0.3rem;
+  }
+}

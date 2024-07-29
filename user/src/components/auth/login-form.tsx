@@ -1,0 +1,155 @@
+import { showError } from '@lib/utils';
+import { Formik, FormikHelpers, FormikProps } from 'formik';
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import { Form, FormControl } from 'react-bootstrap';
+import { connect, ConnectedProps } from 'react-redux';
+import { toast } from 'react-toastify';
+import { setLogin } from 'src/redux/auth/actions';
+import { authService } from 'src/services/auth.service';
+import * as Yup from 'yup';
+
+const Loader = dynamic(() => import('src/components/common-layout/loader/loader'));
+const ShowPasswordIcon = dynamic(() => import('src/components/common-layout/show-password-icon'));
+
+interface FormValues {
+  email: string;
+  password: string;
+  isKeepLogin: boolean;
+}
+
+const validatePassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+const schema = Yup.object().shape({
+  email: Yup.string().email('E-Mail-Format ist nicht korrekt').required('E-Mail wird benötigt'),
+  password: Yup.string()
+    .matches(
+      validatePassword,
+      'Passwort muss mindestens 8 Zeichen lang sein, mindestens 1 Zahl, 1 Großbuchstaben, 1 Kleinbuchstaben und 1 Sonderzeichen enthalten'
+    )
+    .required('Passwort wird benötigt'),
+  isKeepLogin: Yup.boolean().default(false)
+});
+
+
+const mapDispatch = {
+  dispatchSetLogin: setLogin
+};
+
+const connector = connect(null, mapDispatch);
+
+type PropsFromRedux = ConnectedProps<typeof connector>;
+
+function LoginForm({
+  dispatchSetLogin
+}: PropsFromRedux) {
+  const [loading, setLoading] = useState(false);
+  const [showPw, setShowPw] = useState(false);
+  const router = useRouter();
+
+  const login = async (values) => {
+    try {
+      const resp = await authService.login(values);
+      const { token } = resp.data;
+      authService.setAuthHeaderToken(token);
+      authService.setToken(token);
+      const me = await authService.me({
+        Authorization: `Bearer ${token}`
+      });
+      dispatchSetLogin(me.data);
+      localStorage.setItem('userType', JSON.stringify(me.data?.type));
+      localStorage.setItem('userEmail', JSON.stringify(me.data?._id));
+      if (!me?.data?.isCompletedProfile || !me?.data?.isApproved) {
+        router.push('/profile/update?requireUpdate=1');
+      } else {
+        router.push('/conversation');
+      }
+    } catch (e) {
+      const error = await e;
+      toast.error(error?.data?.message || showError(e));
+      setLoading(false);
+    }
+  };
+
+  return (
+    <Formik
+      validationSchema={schema}
+      initialValues={{ email: '', password: '', isKeepLogin: false }}
+      onSubmit={(values: FormValues, formikHelpers: FormikHelpers<FormValues>) => {
+        formikHelpers.setSubmitting(false);
+        login(values);
+      }}
+    >
+      {(props: FormikProps<FormValues>) => (
+        <form onSubmit={props.handleSubmit}>
+          <Form.Group className="form-group">
+            <Form.Label className="input-label">E-Mail-Adresse</Form.Label>
+            <FormControl
+              isInvalid={props.touched.email && !!props.errors.email}
+              name="email"
+              className="form-control"
+              type="text"
+              id="email"
+              placeholder="user@example.com"
+              onChange={props.handleChange}
+              onBlur={props.handleBlur}
+              value={props.values.email}
+            />
+            <div className="invalid-feedback">{props.errors.email}</div>
+          </Form.Group>
+
+          <Form.Group className="form-group">
+            <Form.Label className="input-label">Passwort</Form.Label>
+            <FormControl
+              isInvalid={props.touched.password && !!props.errors.password}
+              name="password"
+              className="form-control"
+              type={showPw ? 'text' : 'password'}
+              id="password"
+              placeholder="********"
+              onChange={props.handleChange}
+              onBlur={props.handleBlur}
+              value={props.values.password}
+            />
+
+            <ShowPasswordIcon
+              handleClick={setShowPw}
+              showPw={showPw}
+              error={props.errors.password}
+            />
+            <div className="invalid-feedback">{props.errors.password}</div>
+          </Form.Group>
+          <Form.Group className="mb-10 form-group">
+            <div className="xchat-checkbox-area">
+              {/* <div className="checkbox"> */}
+              <Form.Check
+                type="checkbox"
+                id="isKeepLogin"
+                name="isKeepLogin"
+                label="Eingeloggt bleiben"
+                checked={props.values.isKeepLogin}
+                onChange={props.handleChange}
+                onBlur={props.handleBlur}
+              />
+              {/* </div> */}
+              <Link legacyBehavior href="/auth/forgot" as="/forgot" key="forgot-password">
+                <a href="" className="switcher-text">
+                Passwort vergessen
+                </a>
+              </Link>
+            </div>
+          </Form.Group>
+          <div className="form-group">
+            <button type="submit" className="xchat-btn-fill" disabled={loading}>
+              {loading ? <Loader /> : 'Einloggen'}
+            </button>
+          </div>
+        </form>
+      )}
+    </Formik>
+  );
+}
+
+export default connector(LoginForm);
