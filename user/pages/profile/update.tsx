@@ -47,7 +47,7 @@ function UpdateProfile({
 
                 {showRq && (
                 <div className="alert alert-warning" role="alert">
-                 Bitte aktualisieren Sie Ihr Profil, um die Website zu betreten.
+                 {t?.profilePage?.alert}
                 </div>
                 )}
               </div>

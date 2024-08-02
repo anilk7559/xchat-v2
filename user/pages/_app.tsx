@@ -37,7 +37,12 @@ function Application({
     // Fetch language from the URL or use default
     const { locale } = router;
     setLang(locale || 'en');
+    localStorage.setItem('locale', locale || 'en');
   }, [router]);
+
+  // console.log('====================================');
+  // console.log(lang);
+  // console.log('====================================');
 
   return (
     <Provider store={store}>

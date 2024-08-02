@@ -46,6 +46,7 @@
       "logout": "Logout"
     },
     "profilePage": {
+      "alert": "Please update your profile to enter the website.",
       "title": "My Profile",
       "account": "Account",
       "update": "Update Personal Contact Information",
@@ -102,6 +103,44 @@
       "email": "Email Address",
       "message": "Description",
       "submit": "Submit"
-    }
+    },
+      "adultConfirmModal": {
+        "title": "You must be over 18 years old and agree to the terms below before proceeding.",
+        "content": {
+          "intro": "You also agree to share your information with girls2dream. Learn more",
+          "important": "An important part of the camera material is provided by girls2dream.com",
+          "details": {
+            "profileContent": "Profile content and photographs",
+            "playerFunctionality": "The player and its functionalities",
+            "paymentProcessor": "The payment processor",
+            "etc": "...",
+            "dependent": "Therefore, every page of the website is dependent and cannot be separated from (User-URL) service."
+          },
+          "warning": "This website contains information, links, images, and videos with sexually explicit material (collectively, 'Sexually Explicit Material'). DO NOT proceed if: (i) you are not at least 18 years old or the age of majority in any jurisdiction where you view or access the Sexually Explicit Material ('Age of Majority'), (ii) such material offends you, or (iii) viewing Sexually Explicit Material is not legal in your community where you choose to view it.",
+          "confirmation": "By choosing to enter this website, you are affirming under oath and under penalty of perjury pursuant to Title 28 U.S.C. § 1746 and other applicable laws that all of the following statements are true and correct:",
+          "points": {
+            "ageOfMajority": "I have reached the Age of Majority in my jurisdiction;",
+            "personalUse": "The sexually explicit material I view is for my personal use, and I will not expose minors to the material;",
+            "wishToView": "I wish to receive/view sexually explicit material;",
+            "constitutionalRight": "I believe it is my unalienable constitutional right as an adult to receive/view sexually explicit material;",
+            "noOffense": "I believe that sexual acts between consenting adults are neither offensive nor obscene;",
+            "noViolation": "Viewing, reading, and downloading sexually explicit material does not violate the standards of any community, city, state, or country where I will view, read, and/or download the Sexually Explicit Material;",
+            "responsibility": "I am solely responsible for any false statements or legal consequences from viewing, reading, or downloading material appearing on this website. I further agree that neither this website nor its affiliates can be held liable for any legal consequences arising from fraudulent access or misuse of this website;",
+            "termsAcceptance": "I understand that my use of this website is governed by the website's Terms of Service, which I have reviewed and accepted, and I agree to be bound by such terms.",
+            "jurisdiction": "I agree that by accessing this website, I submit myself and any business I have a legal or financial interest in to the personal jurisdiction of the State of Florida, Miami-Dade County, should any dispute arise between this website, myself, and/or such business;",
+            "legallyBinding": "This warning page constitutes a legally binding agreement between me, this website, and/or a business I have a legal or financial interest in. Should any provision of this agreement be deemed unenforceable, the remainder will be enforced to the fullest extent possible and the unenforceable provision will be modified to the extent necessary to make it enforceable in a manner closest to the intentions expressed herein.",
+            "performers": "All performers on this website are over 18 years of age, have consented to photographic and/or film recordings, believe it is their right to engage in consensual sexual acts for pleasure and the education of other adults, and I believe it is my right as an adult to view them doing what adults do;",
+            "intendedUse": "The videos and images on this website are intended for responsible adult use as sexual aids, for sexual education, and sexual entertainment;",
+            "falseStatement": "I understand that making a false statement under penalty of perjury is a crime;",
+            "eSignAct": "I agree that this agreement is governed by the 'Electronic Signatures in Global and National Commerce Act' (commonly known as the 'E-Sign Act'), 15 U.S.C. § 7000, et seq., and by choosing to click 'I Agree. Enter Here' and showing my consent to be bound by the terms of this agreement, I expressly take the signature line below as my signature and as my expression of agreement to be bound by the terms of this agreement."
+          },
+          "buttons": {
+            "confirm": "I Agree",
+            "leave": "Leave"
+          }
+        },
+        "notice": "This website actively cooperates with law enforcement in all cases of suspected illegal use of the service, especially in cases of minor use of the service."
+      }
+    
   }
   

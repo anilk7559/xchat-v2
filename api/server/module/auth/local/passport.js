@@ -30,13 +30,13 @@ exports.setup = () => {
             );
           } 
           // ------------- commented out to test the login ------
-          // if (!user.emailVerified) {
-          //   return done(
-          //     null,
-          //     false,
-          //     PopulateResponse.error({ message: 'Please verify your email address' }, 'ERR_EMAIL_NOT_VERIFIED')
-          //   );
-          // }
+          if (!user.emailVerified) {
+            return done(
+              null,
+              false,
+              PopulateResponse.error({ message: 'Please verify your email address' }, 'ERR_EMAIL_NOT_VERIFIED')
+            );
+          }
           return done(null, user);
         });
       } catch (e) {
